@@ -1,9 +1,9 @@
-var AllowedMAC = ["f4:09:d8:a1:db:b9","xx"];
+var AllowedMAC = ["AA:BB:CC:DD:EE:FF","xx"];
 var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs"),
-    port = process.argv[2] || 89;
+    port = process.argv[2] || 80;
 const cProc = require('child_process'),
       exec = require('child_process').exec;
 let getMAC = require("ezarp").getMAC;
@@ -99,7 +99,7 @@ http.createServer(function(request, response) {
 
      });
 
-
+     //If MAC Address is in allowed list then return true
      function isAllowed(ipaddr,cBack) {
        getMAC(ipaddr, result => {
       // console.log(result.mac);

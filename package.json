@@ -33,7 +33,7 @@
   "homepage": "https://github.com/yuzdaboyz/rSOL#readme",
   "main": "rSOL.js",
   "scripts": {
-    "test": "rSOL.js 8888"
+    "test": "rSOL.js 80"
   },
   "dependencies": {
     "ezarp": "^0.2.1-beta"
