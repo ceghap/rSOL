@@ -1,0 +1,41 @@
+{
+  "name": "rsol",
+  "version": "1.0.0",
+  "description": "Remote Sleep-On-LAN for windows linux and macOS",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzdaboyz/rSOL.git"
+  },
+  "author": "Yusri <yusri@yusri.com.my> (https://blog.yusri.com.my/)",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "rSOL.js"
+  ],
+  "keywords": [
+    "lock",
+    "PlexService",
+    "windows",
+    "homeassistant",
+    "Media Player",
+    "Plex",
+    "sleep"
+  ],
+  "devDependencies": {
+    "connect": "*",
+    "serve-static": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/yuzdaboyz/rSOL/issues"
+  },
+  "homepage": "https://github.com/yuzdaboyz/rSOL#readme",
+  "main": "rSOL.js",
+  "scripts": {
+    "test": "rSOL.js 8888"
+  },
+  "dependencies": {
+    "ezarp": "^0.2.1-beta"
+  }
+}
