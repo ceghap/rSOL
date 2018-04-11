@@ -1,6 +1,6 @@
 # rSOL
 
-> Remote Sleep your machine
+> Remote Sleep your machine 
 
 Lock, Sleep, Start/Stop PlexService.
 
@@ -30,14 +30,14 @@ Locks the machine.
 Throws an `Error` if executing the lock command fails or if the OS is not supported.
 
 
-### startPlex
+### startplex
 
 Start the PlexService
 
 Return "OK" or otherwise "KO" should any error occurs.
 
 
-### stopPlex
+### stopplex
 
 Start the PlexService
 
@@ -45,11 +45,9 @@ Return "OK" or otherwise "KO" should any error occurs.
 
 
 ## Related
-
-- [lock-cli](https://github.com/sindresorhus/lock-cli) - CLI for this module
-- [alfred-lock](https://github.com/sindresorhus/alfred-lock) - Alfred workflow
+- [lock-system](https://github.com/sindresorhus/lock-system) - lock-system
 
 
 ## License
 
-WTFPL © [yusri](https://blog.yusri.com,my)
+[![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png "WTFPL")](http://www.wtfpl.net/) © [yusri](https://blog.yusri.com.my)
