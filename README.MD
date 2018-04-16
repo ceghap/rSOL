@@ -30,7 +30,7 @@ Locks the machine.
 Throws an `Error` if executing the lock command fails or if the OS is not supported.
 
 
-### /tdola
+### /tdoqla
 
 Put the machine to sleep
 
