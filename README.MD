@@ -10,7 +10,7 @@ Currently only support Windows. macOS and Linux will follow later.
 ## Requirement / Dependencies
 
 ```
-$ npm i connect serve-static
+$ npm i connect serve-static ezarp
 ```
 
 
