@@ -1,4 +1,4 @@
-var AllowedMAC = ["AA:BB:CC:DD:EE:FF","xx"];
+var AllowedMAC = ["AA:BB:CC:DD:EE:FF","00:50:56:28:A3:C6"];
 var http = require("http"),
     url = require("url"),
     path = require("path"),
@@ -6,7 +6,7 @@ var http = require("http"),
     port = process.argv[2] || 80;
 const cProc = require('child_process'),
       exec = require('child_process').exec;
-let getMAC = require("ezarp").getMAC;
+let getMAC = require("node-arp").getMAC;
 
 
 http.createServer(function(request, response) {
@@ -101,10 +101,10 @@ http.createServer(function(request, response) {
 
      //If MAC Address is in allowed list then return true
      function isAllowed(ipaddr,cBack) {
-       getMAC(ipaddr, result => {
+      getMAC(ipaddr, function(err, mac) {
       // console.log(result.mac);
       // console.log(AllowedMAC.indexOf(result.mac));
-      return (AllowedMAC.indexOf(result.mac) > -1) ? cBack(true) : cBack(false);
+      return (AllowedMAC.toString().toLowerCase().indexOf(mac) > -1) ? cBack(true) : cBack(false);
        },{ separator: ":"});
      }
 
