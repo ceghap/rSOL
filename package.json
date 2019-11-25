@@ -36,6 +36,6 @@
     "test": "rSOL.js 80"
   },
   "dependencies": {
-    "ezarp": "^0.2.1-beta"
+    "node-arp": "^1.0.6"
   }
 }
