@@ -37,6 +37,21 @@ Put the machine to sleep
 Return "OK" or otherwise "KO" should any error occurs.
 
 
+
+### /shutdown
+
+Shutdown the machine
+
+Return "OK" or otherwise "KO" should any error occurs.
+
+
+### /reboot
+
+Reboot the machine
+
+Return "OK" or otherwise "KO" should any error occurs.
+
+
 ### /startplex
 
 Start the PlexService
