@@ -1,4 +1,4 @@
-var AllowedMAC = ["2C:56:DC:39:94:73","00:50:56:28:A3:C6"];
+var AllowedMAC = ["AA:BB:CC:DD:EE:FF","00:00:00:00:00:00"];
 var http = require("http"),
     url = require("url"),
     path = require("path"),
