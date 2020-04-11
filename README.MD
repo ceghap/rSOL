@@ -61,6 +61,7 @@ Return "OK" or otherwise "KO" should any error occurs.
 pkg -t node6-win rSOL.js
 ```
 A bundled exe file will be created. eg. rSOL.exe
+Note that pkg@4.4.6 may not generate the binaries. Downgrade it to version 4.3.8.
 
 
 ### Installing as windows service
