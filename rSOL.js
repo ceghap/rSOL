@@ -76,15 +76,16 @@ http.createServer(function(request, response) {
             // https://msdn.microsoft.com/en-us/library/windows/desktop/aa373201(v=vs.85).aspx
             setTimeout(cProc.execFileSync('rundll32.exe', ['powrprof.dll,SetSuspendState']), 3000);
           break;
+        }
           //Updated 11/04/2020
           case '/shutdown' : {
-            //send response back and exec timed sleep routine
             resVal = "OK";
-            // https://social.technet.microsoft.com/Forums/windows/en-US/f2835363-9512-413d-a6c9-17df2327cd7a/no-hibernation-just-sleep?forum=w7itproperf
-            // As stated in earlier replies, C:\Windows\System32\rundll32.exe powrprof.dll,SetSuspendState 0,1,0
-            // does not perform Sleep or Hybrid Sleep unless Hibernate is turned OFF. Instead, it enters into Hibernate state.
-            // https://msdn.microsoft.com/en-us/library/windows/desktop/aa373201(v=vs.85).aspx
             setTimeout(cProc.execFileSync('shutdown.exe', ['/s /t 3']), 3000);
+          break;
+        }
+          case '/reboot' : {
+            resVal = "OK";
+            setTimeout(cProc.execFileSync('shutdown.exe', ['/r /t 3']), 3000);
           break;
           }
           default: {
