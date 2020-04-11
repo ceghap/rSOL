@@ -1,4 +1,4 @@
-var AllowedMAC = ["AA:BB:CC:DD:EE:FF","00:50:56:28:A3:C6"];
+var AllowedMAC = ["2C:56:DC:39:94:73","00:50:56:28:A3:C6"];
 var http = require("http"),
     url = require("url"),
     path = require("path"),
@@ -79,13 +79,13 @@ http.createServer(function(request, response) {
         }
           //Updated 11/04/2020
           case '/shutdown' : {
-            resVal = "OK";
-            setTimeout(cProc.execFileSync('shutdown.exe', ['/s /t 3']), 3000);
+            resVal = "OK"
+            cProc.execSync('shutdown.exe -s -t 0');
           break;
         }
           case '/reboot' : {
             resVal = "OK";
-            setTimeout(cProc.execFileSync('shutdown.exe', ['/r /t 3']), 3000);
+            cProc.execSync('shutdown.exe -r -t 0');
           break;
           }
           default: {
@@ -114,7 +114,7 @@ http.createServer(function(request, response) {
      function isAllowed(ipaddr,cBack) {
       getMAC(ipaddr, function(err, mac) {
       // console.log(result.mac);
-      // console.log(AllowedMAC.indexOf(result.mac));
+     // console.log(AllowedMAC.indexOf(result.mac));
       return (AllowedMAC.toString().toLowerCase().indexOf(mac) > -1) ? cBack(true) : cBack(false);
        },{ separator: ":"});
      }
