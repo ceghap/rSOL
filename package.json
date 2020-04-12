@@ -36,6 +36,7 @@
     "test": "rSOL.js 80"
   },
   "dependencies": {
-    "node-arp": "^1.0.6"
+    "node-arp": "^1.0.6",
+    "pkg": "^4.4.7"
   }
 }
