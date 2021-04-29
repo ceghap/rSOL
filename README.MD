@@ -88,7 +88,7 @@ nssm install rSOL rSOL.exe
 ```
 
 Check the windows service manager and start the rSOL service.
-By default the endpoint would be listening at ```http://127.0.0.1/<function>```
+By default the endpoint would be listening at ```http://<ip address>/<function>```
 
 ## Related
 - [Home Assistant](https://www.home-assistant.io/) - Open-source home automation platform running on Python 3
