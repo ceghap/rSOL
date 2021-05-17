@@ -24,8 +24,8 @@
     "sleep"
   ],
   "devDependencies": {
-    "connect": "*",
-    "serve-static": "*"
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1"
   },
   "bugs": {
     "url": "https://github.com/yuzdaboyz/rSOL/issues"
@@ -36,7 +36,6 @@
     "test": "rSOL.js 80"
   },
   "dependencies": {
-    "node-arp": "^1.0.6",
-    "pkg": "^4.3.8"
+    "node-arp": "^1.0.6"
   }
 }
