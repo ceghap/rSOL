@@ -9,7 +9,7 @@ Currently only support Windows. macOS and Linux will follow later.
 ## Getting started
 
 ```
-$ npm i
+$ npm i -g pkg@4.3.8 && npm i
 ```
 
 ## Usage
@@ -63,18 +63,17 @@ Return "OK" or otherwise "KO" should any error occurs.
 ### Bundling rSOL.js and run as windows service using nssm
 
 ```bash
-pkg -t node6-win rSOL.js
+pkg rSOL.js
 ```
 
-A bundled exe file will be created. eg. rSOL.exe
-Note that pkg@4.4.6 may not generate the binaries. Downgrade it to version 4.3.8.
+A bundled exe file will be created. eg. rSOL-win.exe
 
 ### Installing as windows service
 
 Using nssm to install rSOL as service
 
 ```bash
-nssm install rSOL rSOL.exe
+nssm install rSOL rSOL-win.exe
 ```
 
 Check the windows service manager and start the rSOL service.
