@@ -9,7 +9,7 @@ Currently only support Windows. macOS and Linux will follow later.
 ## Getting started
 
 ```
-$ npm i -g pkg@4.3.8 && npm i
+$ npm i -g pkg && npm i
 ```
 
 ## Usage
